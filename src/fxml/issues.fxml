@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="pane" stylesheets="@../css/dark_theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.IssuesAccountController">
+	<children>
+      <TextField fx:id="userTextField" layoutX="50.0" layoutY="137.0" prefHeight="26.0" prefWidth="300.0" promptText="User" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="50.0" layoutY="187.0" prefHeight="26.0" prefWidth="300.0" promptText="Password" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="submitButton" layoutX="147.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Submit">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="368.0" layoutY="1.0" mnemonicParsing="false" styleClass="window_button" text="X" textFill="DEEPSKYBLUE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="minimizeButton" layoutX="334.0" layoutY="1.0" mnemonicParsing="false" styleClass="window_button" text="−" textFill="DEEPSKYBLUE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="7.0" layoutY="579.0" text="© Shadow Secure" textFill="DEEPSKYBLUE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="resetComboBox" layoutX="50.0" layoutY="86.0" prefHeight="25.0" prefWidth="141.0" promptText="Reset" styleClass="combo_box" />
+      <TextField fx:id="emailTextField" layoutX="50.0" layoutY="237.0" prefHeight="26.0" prefWidth="300.0" promptText="Email" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="50.0" layoutY="470.0" text="Contact Us" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="380.0" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="feedbackEmailLaink" layoutX="47.0" layoutY="495.0" text="feedback@shadowsecure.com ">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="supportEmailLink" layoutX="47.0" layoutY="520.0" text="support@shadowsecure.com ">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Hyperlink>
+      <TextField fx:id="verifyEmailTextField" layoutX="50.0" layoutY="354.0" prefHeight="26.0" prefWidth="300.0" promptText="Email" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="resendVerifyLinkButton" layoutX="98.0" layoutY="405.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="186.0" text="Resend Verification Link">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

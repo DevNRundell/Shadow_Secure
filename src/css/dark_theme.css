@@ -1,0 +1,78 @@
+.pane {
+    -fx-background-color: #333232;  
+    -fx-border-style: solid;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-color: white;
+}
+
+.textbox { 
+    -fx-background-color: #333232; 
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", Gadget, sans-serif;
+}
+
+.textbox:focused {
+    -fx-border-color: #00BFFF;
+}
+
+.dialog_text-area{
+	-fx-background-color: #333232;
+	-fx-control-inner-background: #333232;
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+/*********************************************/
+
+/******************Buttons********************/
+
+/*********************************************/
+.button {
+    -fx-background-color: #00BFFF;
+    -fx-border-radius: 0;
+}
+
+.button:hover {
+    -fx-background-color: #333232;
+    -fx-text-fill: white;
+}
+
+.window_button {
+    -fx-background-color: #333232;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.window_button:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #00BFFF;
+}
+
+/*********************************************/
+
+/*******************Boxes*********************/
+
+/*********************************************/
+.combo_box {
+    -fx-background-color: #333232;
+    -fx-control-inner-background: #333232;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 3;
+    -fx-border-color: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", Gadget, sans-serif;
+}
+
+.combo_box > .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #333232;
+}
+
+.combo_box:focused {
+    -fx-border-color: #00BFFF;
+}

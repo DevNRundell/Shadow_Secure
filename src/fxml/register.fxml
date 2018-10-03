@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="pane" stylesheets="@../css/dark_theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController">
+   <children>
+      <TextField fx:id="fnameTextField" layoutX="50.0" layoutY="86.0" prefHeight="26.0" prefWidth="300.0" promptText="First Name" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lnameTextField" layoutX="50.0" layoutY="136.0" prefHeight="26.0" prefWidth="300.0" promptText="Last Name" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailTextField" layoutX="50.0" layoutY="186.0" prefHeight="26.0" prefWidth="300.0" promptText="Email" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="userTextField" layoutX="50.0" layoutY="236.0" prefHeight="26.0" prefWidth="300.0" promptText="User" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="50.0" layoutY="286.0" prefHeight="26.0" prefWidth="300.0" promptText="Password" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="confirmPassField" layoutX="50.0" layoutY="336.0" prefHeight="26.0" prefWidth="300.0" promptText="Confirm Password" styleClass="textbox">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="submitButton" layoutX="156.0" layoutY="386.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Submit">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="minimizeButton" layoutX="336.0" layoutY="1.0" mnemonicParsing="false" styleClass="window_button" text="−" textFill="DEEPSKYBLUE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="368.0" layoutY="1.0" mnemonicParsing="false" styleClass="window_button" text="X" textFill="DEEPSKYBLUE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="7.0" layoutY="579.0" text="© Shadow Secure" textFill="DEEPSKYBLUE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="442.0" text="Password Requirements:" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="passLengthLabel" layoutX="60.0" layoutY="470.0" text="• Length No Less Than 8" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="passUppercaseLabel" layoutX="60.0" layoutY="495.0" text="• Atleast 1 Uppercase Character" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="passDigitLabel" layoutX="60.0" layoutY="520.0" text="• Atleast 1 Digit" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
